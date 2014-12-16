@@ -1,4 +1,4 @@
 # Spark Entrepreneurship
 
-<a href="sparkentrepreneurship.club">sparkentrepreneurship.club</a>
+<a href="www.sparkentrepreneurship.club">sparkentrepreneurship.club</a>
 <p>University of Rochester's undergraduate entrepreneurship organization</p>
