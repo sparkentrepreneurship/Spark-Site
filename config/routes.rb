@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
+  # get 'one_page/home'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'application#in_progress'
+  root 'one_page#home'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

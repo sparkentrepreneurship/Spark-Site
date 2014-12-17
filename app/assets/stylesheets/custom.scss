@@ -1,0 +1,76 @@
+/* moop */
+
+a {
+	color: #ccc;
+	text-decoration: none;
+	&:hover {
+		color: #eee;
+	}
+}
+
+.img-placeholder {
+	width: 100%;
+	height: 600px;
+	// background-color: #fff;
+	margin-bottom: 5px;
+}
+
+/* navigation */
+
+.nav-container {
+	position: fixed;
+	width: 100%;
+	.nav {
+		position: relative;
+		height: 70px;
+		background: rgb(20, 20, 20); /* Fall-back for browsers that don't support rgba */
+    	background: rgba(20, 20, 20, .8);
+		// background-color: #999;
+		padding: 0 100px 0 100px;
+		.nav-left {
+			display: inline;
+			float: left;
+			// make it center vertically
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+		.nav-right {
+			display: inline;
+			float: right;
+
+			.nav-right-item-container {
+				display: inline-block;
+				// overflow: auto;
+				margin-left: 10px;
+				.nav-right-item {
+					display: table-cell;
+					text-align: center;
+					vertical-align: middle;
+					height: 70px;
+					padding: 0 20px 0 20px;
+					// min-width: 80px;
+				}
+			}
+		}
+	}
+}
+
+
+/* body */
+
+body {
+	background-color: #ededed;
+}
+
+.splash-container {
+	width: 100%;
+	.img-placeholder {
+		height: 700px;
+		background-image: image-url("splash.jpg");
+		background-size: 1500px;
+		background-position: center;
+		background-color: #eee;
+	}
+}
+
