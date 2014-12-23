@@ -238,8 +238,9 @@ body {
 .content {
 	width: $content-width;
 	min-width: $content-width;
-	margin: 0 auto 50px auto;
-
+	margin: 0 auto 0 auto;
+	// margin: 0 $side-margin 0 $side-margin;
+	padding: 0 0 50px 0;
 }
 
 .text {
@@ -258,6 +259,7 @@ body {
 	width: 300px;
 	height: 300px;
 	background-color: #ededed;
+	margin-bottom: 30px;
 }
 
 // special after css for the equidistant trick... 
@@ -265,6 +267,28 @@ body {
 	content: '';
 	width: 100%;
 	display: inline-block;
+}
+
+
+
+
+
+
+
+.profile {
+	display: inline-block;
+	text-align: center;
+	width: 200px;
+	.profile-pic {
+		background-color: #ededed;
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		margin: 0 auto 0 auto;
+	}
+	.profile-name {
+
+	}
 }
 
 
