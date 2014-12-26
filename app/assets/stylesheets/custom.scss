@@ -1,7 +1,8 @@
 /* variables */
 
-$side-margin: 50px;
-$side-margin-rightnav: 35px;
+$side-margin: 0px; // 50px for margin
+// $side-margin-rightnav: 35px; // adjusted right margin for navbar
+$side-margin-rightnav: 0px;
 $content-width: 960px;
 
 $flatui-silver: #bdc3c7;
@@ -272,7 +273,7 @@ body {
 
 // MailChimp signup form
 #mc_embed_signup {
-	background-color: #efefef;
+	// background-color: #efefef;
 	display: block;
 	position: relative;
 	text-align: center;
