@@ -6,6 +6,8 @@ $side-margin-rightnav: 0px;
 $content-width: 960px;
 
 $flatui-silver: #bdc3c7;
+$dark-grey: #222;
+$flatui-yellow: #f1c40f;
 
 /* preliminary general stuff */
 
@@ -23,11 +25,11 @@ a {
 }
 
 .light-bg {
-	background-color: transparent;
+	background-color: $flatui-yellow;
 }
 
 .dark-bg {
-	background-color: $flatui-silver;
+	background-color: $dark-grey;
 }
 
 .grey-bg {
@@ -179,9 +181,9 @@ a {
 /* body and content */
 
 body {
-	background-color: #ededed;
+	background-color: #eaeaea;
 	min-width: $content-width;
-	color: #333;
+	color: $dark-grey;
 }
 
 .splash-container {
@@ -189,7 +191,7 @@ body {
 	.splash-img-placeholder {
 		height: 700px;
 		width: 100%;
-		background-image: image-url("splash.jpg");
+		background-image: image-url("splash3.jpg");
 		background-size: 1500px;
 		background-position: center;
 		background-color: #eee;
