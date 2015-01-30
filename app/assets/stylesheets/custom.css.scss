@@ -1,8 +1,8 @@
 /* variables */
 
-$side-margin: 0px; // 50px for margin
+$side-margin: 100px; // 50px for margin
 // $side-margin-rightnav: 35px; // adjusted right margin for navbar
-$side-margin-rightnav: 0px;
+$side-margin-rightnav: 85;
 $content-width: 960px;
 
 $flatui-silver: #bdc3c7;
@@ -61,6 +61,7 @@ a {
 			// height: 70px;
 			width: $content-width;
 			margin: 0 auto 0 auto;
+			padding: 0 $side-margin-rightnav 0 $side-margin;
 			a {
 				color: #000;
 				&:hover {
@@ -71,7 +72,7 @@ a {
 			.nav-left {
 				display: inline;
 				float: left;
-				margin-left: $side-margin;
+				// margin-left: $side-margin;
 				.nav-left-item-container {
 					display: inline-block;
 					.nav-left-item {
@@ -92,7 +93,7 @@ a {
 			.nav-right {
 				display: inline;
 				float: right;
-				margin-right: $side-margin-rightnav;
+				// margin-right: $side-margin-rightnav;
 
 				.nav-right-item-container {
 					display: inline-block;
@@ -132,11 +133,12 @@ a {
 			// height: 70px;
 			width: $content-width;
 			margin: 0 auto 0 auto;
+			padding: 0 $side-margin-rightnav 0 $side-margin;
 			
 			.nav-left {
 				display: inline;
 				float: left;
-				margin-left: $side-margin;
+				// margin-left: $side-margin;
 				.nav-left-item-container {
 					display: inline-block;
 					.nav-left-item {
@@ -157,7 +159,7 @@ a {
 			.nav-right {
 				display: inline;
 				float: right;
-				margin-right: $side-margin-rightnav;
+				// margin-right: $side-margin-rightnav;
 
 				.nav-right-item-container {
 					display: inline-block;
@@ -223,7 +225,8 @@ body {
 .header {
 	font-size: 2em;
 	font-weight: 700;
-	padding: 50px 0 30px 0;
+	margin: 0 auto 0 auto;
+	padding: 80px 0 50px 0;
 	text-align: center;
 }
 
@@ -244,11 +247,12 @@ body {
 	min-width: $content-width;
 	margin: 0 auto 0 auto;
 	// margin: 0 $side-margin 0 $side-margin;
-	padding: 0 0 50px 0;
+	padding: 0 $side-margin 80px $side-margin;
 }
 
 .text {
 	text-align: center;
+	line-height: 1.3em;
 	font-size: 1.5em;
 	color: #333;
 }
