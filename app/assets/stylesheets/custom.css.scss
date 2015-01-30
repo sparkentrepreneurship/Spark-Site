@@ -257,6 +257,12 @@ body {
 	color: #333;
 }
 
+.mc-mock-box {
+	height: 200px;
+	margin: 50px 0 0 0;
+	border: 1px solid $dark-grey;
+}
+
 // event container is special class with css trick for equidistant css divs
 .event-container {
 	text-align: justify;
