@@ -258,37 +258,18 @@ body {
 }
 
 .mc-mock-box {
-	height: 200px;
+	height: 560px;
 	margin: 50px 0 0 0;
 	border: 1px solid $dark-grey;
 }
 
-// event container is special class with css trick for equidistant css divs
-.event-container {
-	text-align: justify;
-}
-
-.event {
-	display: inline-block;
-	width: 300px;
-	height: 300px;
-	background-color: #ededed;
-	// margin-bottom: 30px;
-}
-
-// special after css for the equidistant blocks trick... 
-.event-container:after {
-	content: '';
-	width: 100%;
-	display: inline-block;
-}
-
 // MailChimp signup form
 #mc_embed_signup {
-	// background-color: #efefef;
+	// background-color: #f1c40f;
+	background: #f1a400;
 	display: block;
 	position: relative;
-	text-align: center;
+	text-align: left;
 	padding: 0 0 0 0;
 	width: 100%;
 	margin: 0 auto 0 auto;
@@ -299,10 +280,20 @@ body {
 		font-weight: bold;
 		padding: 10px 0 10px 0;
 	}
+	.mc-field-group {
+		float: left;
+		margin: 10px;
+		input {
+			display: block;
+		}
+	}
+
+
+	/*
 	input.email {
 		display: block;
 		padding: 8px 0;
-		margin: 0 auto 10px auto;
+		// margin: 0 auto 10px auto;
 		// margin-bottom: 10px;
 		text-indent: 5px;
 		width: 58%;
@@ -314,6 +305,7 @@ body {
 		margin: 0 auto 10px auto;
 		min-width: 90px;
 	}
+	*/
 	.button {
 		clear: both;
 		background-color: #aaa;
@@ -341,6 +333,26 @@ body {
 
 #mc-embedded-subscribe-form {
 	padding: 0 0 0 0;
+}
+
+// event container is special class with css trick for equidistant css divs
+.event-container {
+	text-align: justify;
+}
+
+.event {
+	display: inline-block;
+	width: 300px;
+	height: 300px;
+	background-color: #ededed;
+	// margin-bottom: 30px;
+}
+
+// special after css for the equidistant blocks trick... 
+.event-container:after {
+	content: '';
+	width: 100%;
+	display: inline-block;
 }
 
 // who we are
