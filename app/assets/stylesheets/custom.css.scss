@@ -257,6 +257,14 @@ body {
 	color: #333;
 }
 
+.dark {
+	color: #333;
+}
+
+.light {
+	color: #ccc;
+}
+
 .mc-mock-box {
 	// height: 560px;
 	margin: 50px 0 0 0;
@@ -441,4 +449,33 @@ body {
 	}
 }
 
+// Contact Us
+
+.facebook {
+	font-size: 1em;
+	text-align: center;
+	.fb-link {
+		margin: 20px 0 0 0;
+		a {
+			color: $flatui-yellow;
+			&:hover {
+				color: #fff;
+			}
+		}
+	}
+	.col-left {
+		float: left;
+		width: 50%;
+	}
+	.col-right {
+		float: right;
+		width: 50%;
+	}
+}
+
+.footer {
+	font-size: .7em;
+	text-align: center;
+	padding: 0 0 20px 0;
+}
 
