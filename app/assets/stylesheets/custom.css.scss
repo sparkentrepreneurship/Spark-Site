@@ -258,81 +258,139 @@ body {
 }
 
 .mc-mock-box {
-	height: 560px;
+	// height: 560px;
 	margin: 50px 0 0 0;
 	border: 1px solid $dark-grey;
 }
 
 // MailChimp signup form
 #mc_embed_signup {
-	// background-color: #f1c40f;
-	background: #f1a400;
-	display: block;
+	width: 40%;
+	display: inline-block;
 	position: relative;
 	text-align: left;
-	padding: 0 0 0 0;
-	width: 100%;
-	margin: 0 auto 0 auto;
 	label {
-		display: block;
-		font-size: 1.5em;
-		// padding-bottom: 10px;
-		font-weight: bold;
-		padding: 10px 0 10px 0;
+		display: inline-block;
+		font-size: 1em;
+		font-weight: 300;
+		padding: 10px 25px 5px 0;
 	}
+
 	.mc-field-group {
-		float: left;
-		margin: 10px;
+		display: block;
+		margin: 20px 20px 20px 60px;
+		.mce_inline_error {
+			width: 200px;
+			display: inline-block;
+			font-size: .8em;
+			color: #eaeaea;
+			background: #e74c3c;
+			margin: 0;
+			border-color: #e74c3c;
+		}
+
 		input {
+			font-size: .8em;
 			display: block;
+			width: 200px;
+			height: 24px;
+			padding: 2px 7px 2px 7px;
+			color: $dark-grey;
+			background: #fafafa;
+			&:focus {
+				outline: none;
+				background: #ffffff;
+			}
+			&.email {
+				margin: 40px 20px 20px 0px;
+				&.mce_inline_error {
+					color: $dark-grey;
+					background: #fafafa;
+					font-size: .8em;
+					margin: 40px 20px 0px 0px;
+				}
+			}
+		}
+
+		.styled-select {
+			background: #fafafa;
+			color: #444;
+			font-size: .8em;
+			width: 200px;
+			height: 24px;
+			padding: 2px 7px 2px 7px;
+			border-top: 2px solid #999;
+			border-left: 1px solid #ccc;
+			border-right: 1px solid #ccc;
+			border-bottom: 1px solid #eee;
+			select {
+				background: transparent;
+				display: inline-block;
+				width: 200px;
+				height: 24px;
+				line-height: 1;
+				border: 0;
+				border-raidus: 0;
+				&:focus {
+					outline: none;
+					border: 0;
+				}
+			}
 		}
 	}
 
+	.indicates-required {
+		float: left;
+		display: inline-block;
+	}
 
-	/*
-	input.email {
-		display: block;
-		padding: 8px 0;
-		// margin: 0 auto 10px auto;
-		// margin-bottom: 10px;
-		text-indent: 5px;
-		width: 58%;
-		min-width: 130px;
-	}
-	input.button {
-		display: block;
-		width: 35%;
-		margin: 0 auto 10px auto;
-		min-width: 90px;
-	}
-	*/
 	.button {
 		clear: both;
-		background-color: #aaa;
+		background-color: $dark-grey;
 		border: 0 none;
-		border-radius: 4px;
 		color: #FFFFFF;
 		cursor: pointer;
 		display: inline-block;
 		font-size: 15px;
 		font-weight: bold;
-		height: 32px;
-		line-height: 32px;
-		margin: 0 5px 10px 0;
-		padding: 0;
+		width: 214px;
+		height: 30px;
+		line-height: 24px;
+		margin: 20px 20px 40px 60px;
+		padding: 2px 7px 2px 7px;
 		text-align: center;
 		text-decoration: none;
-		vertical-align: top;
 		white-space: nowrap;
-		width: auto;
 		&:hover {
 			background-color: #777;
 		}
+	}
+
+	.response {
+		margin: 0 20px 0 60px;
+		color: $dark-grey;
 	}
 }
 
 #mc-embedded-subscribe-form {
 	padding: 0 0 0 0;
+}
+
+.signup-text {
+	float: right;
+	display: inline-block;
+	position: relative;
+	width: 60%;
+	height: 100%;
+	h2 {
+		display: block;
+		margin: 40px 20px 20px 20px;
+	}
+	.inner-signup-text {
+		text-align: left;
+		padding: 0px 60px 60px 20px;
+		font-size: 1.1em;
+	}
 }
 
 // event container is special class with css trick for equidistant css divs
