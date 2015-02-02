@@ -63,7 +63,7 @@ a {
 			margin: 0 auto 0 auto;
 			padding: 0 $side-margin-rightnav 0 $side-margin;
 			a {
-				color: #000;
+				color: #ccc;
 				&:hover {
 					color: #fff;
 					// text-shadow: 0px 0px 8px #fff;
@@ -98,7 +98,7 @@ a {
 				.nav-right-item-container {
 					display: inline-block;
 					// overflow: auto;
-					margin-left: 10px;
+					// margin-left: 10px;
 					.nav-right-item {
 						display: table-cell;
 						text-align: center;
