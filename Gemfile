@@ -21,6 +21,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'therubyracer', platforms: :ruby
 gem 'fb_graph'
 
+# New Relix Addon for Heroku (auto pinging so the app doesn't sleep)
+gem 'newrelic_rpm'
+
 group :development, :test do
 	# Use sqlite3 as the database for Active Record
 	gem 'sqlite3',					'1.3.9'
