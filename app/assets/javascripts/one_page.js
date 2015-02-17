@@ -8,6 +8,7 @@ $(document).ready(function() {
 	/*** code for automatic scrolling ***/
 	$('.nav').localScroll({duration:500});
 	$('.fixed-nav').localScroll({duration:500});
+	$('.splash-text').localScroll({duration:500});
 
  	/*** code for the flip down navigation bar ***/
 	$(window).scroll(function() {
