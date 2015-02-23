@@ -3,4 +3,6 @@ class OnePageController < ApplicationController
   end
   def red
   end
+  def conference
+  end
 end

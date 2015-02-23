@@ -9,6 +9,8 @@ $(document).ready(function() {
 	$('.nav').localScroll({duration:500});
 	$('.fixed-nav').localScroll({duration:500});
 	$('.splash-text').localScroll({duration:500});
+	$('.conf-fixed-nav').localScroll({duration:500});
+	$('.content').localScroll({duration:500});
 
  	/*** code for the flip down navigation bar ***/
 	$(window).scroll(function() {
@@ -50,5 +52,34 @@ $(document).ready(function() {
 	    }
 	);
 	*/
+
+	/******************************/
+	/***						***/
+	/***	conference page		***/
+	/***						***/
+	/******************************/
+
+	// set the nav bar gradient to right position
+	if ($(window).scrollTop() > ($(window).height()-$('.conf-fixed-nav-contents').height())) {
+		$('.nav-bg').animate({
+			top: -($(window).height()-$('.conf-fixed-nav-contents').height()),
+		}, 1, function() {
+		});
+	}
+
+	// Gradient effects for the navigation bar
+	$(window).scroll(function() {
+		var yPos = ( $(window).scrollTop() );
+		if (yPos < ($(window).height()-$('.conf-fixed-nav-contents').height())) {
+			$('.nav-bg').animate({
+				top: -$(window).scrollTop(),
+			}, 1, function() {
+			});
+		}
+	});
+
+
+
+
 
 });
