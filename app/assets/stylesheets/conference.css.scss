@@ -490,6 +490,18 @@ $dark-blue-t: rgba(18, 42, 54, 0.99);
 		height: 400px;
 	}
 
+	.sponsor-images {
+		.sponsor-row {
+			width: 100%;
+			text-align: center;
+			margin: 0 0 50px 0;
+			img {
+				margin: 0 30px 0 30px;
+			}
+		}
+		margin: 20px 0 50px 0;
+	}
+
 	// Contact Us
 
 	.facebook {
