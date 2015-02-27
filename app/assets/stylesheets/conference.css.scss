@@ -22,7 +22,7 @@ $dark-blue-t: rgba(18, 42, 54, 0.99);
 /* * * * * * * * * * * * * * * * * * * * * * *	*/
 
 
-.conference{
+.conference {
 
 	/* preliminary general stuff */
 
@@ -81,6 +81,10 @@ $dark-blue-t: rgba(18, 42, 54, 0.99);
 
 	.above-shadow {
 		z-index: 25;
+	}
+
+	.revealOnScroll {
+		visibility: hidden;
 	}
 
 	/* navigation */
@@ -204,7 +208,7 @@ $dark-blue-t: rgba(18, 42, 54, 0.99);
 				width: 1100px;
 				text-align: center;
 				position: relative;
-				top: 50%;
+				top: 25%;
 				transform: translateY(-50%);
 				.splash-title {
 					//background-color: $dark-blue;
