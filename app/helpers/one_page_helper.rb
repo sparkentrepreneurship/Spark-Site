@@ -1,0 +1,2 @@
+module OnePageHelper
+end

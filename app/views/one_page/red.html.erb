@@ -1,0 +1,186 @@
+<div class="red-paper-clip">
+	<div class="nav-container">
+		<div class="nav-contents">
+			<div class="nav">
+				<div class="nav-left">
+					<% if current_page?(controller: 'one_page', action: 'red') %>
+						<a href=<%= url_for(:only_path => false, :controller => 'one_page', :action => 'home') %>><div class="nav-left-item-container">
+							<div class="nav-left-item">
+								<%= image_tag "logo_full.png", width: "24px", height: "24px", :class=>"nav-logo"%>Spark Entrepreneurship
+							</div>
+						</div></a>
+					<% else %>
+						<a href="#top"><div class="nav-left-item-container">
+							<div class="nav-left-item">
+								<%= image_tag "logo_full.png", width: "24px", height: "24px", :class=>"nav-logo"%>Spark Entrepreneurship
+							</div>
+						</div></a>
+					<% end %>
+				</div>
+				<div class="nav-right">
+					<a href="#about"><div class="nav-right-item-container"><div class="nav-right-item">About</div></div></a>
+					<a href="#contact"><div class="nav-right-item-container"><div class="nav-right-item">Contact Us</div></div></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="fixed-nav-container">
+		<div class="fixed-nav-contents">
+			<div class="fixed-nav">
+				<div class="nav-left">
+					<a href="#top"><div class="nav-left-item-container">
+						<div class="nav-left-item">
+							<%= image_tag "logo_full.png", width: "24px", height: "24px", :class=>"nav-logo"%>Spark Entrepreneurship
+						</div>
+					</div></a>
+				</div>
+				<div class="nav-right">
+					<a href="#about"><div class="nav-right-item-container"><div class="nav-right-item">About</div></div></a>
+					<a href="#contact"><div class="nav-right-item-container"><div class="nav-right-item">Contact Us</div></div></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<video autoplay loop muted poster=<%= asset_path 'super-subtle-paperclip.jpg' %> id="bgvid">
+		<source src='http://vid375.photobucket.com/albums/oo198/sparkentrepreneurship/StopMotion_zpshp52xuo4.mp4' type="video/mp4">
+	</video>
+
+	<div class="body-container">
+		<div class="splash-container container">
+			<a name="top"></a>
+			<div class="splash-img-placeholder">
+				<div class="splash-text">
+					<div class="splash-title">
+						Red Paperclip<br>Challenge
+					</div>
+					<div class="splash-subtitle">Friday, March 20th to Saturday, March 21st</div>
+					<a href="#itinerary">
+						<div class="splash-itinerary-link">
+							<div class="splash-itinerary-link-text">See Full Itinerary</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="about-container container light-bg">
+			<a class="locallink" name="about"></a>
+			<div class="content">
+				<div class="header header-dark">What Is This?</div>
+				<!-- Move headers here for other divs -->
+				<div class="text dark">
+					You don’t need to have a business degree or invent the next Facebook to be an entrepreneur! Creative problem solving is at the crux of entrepreneurship. Come join students of all majors, interests, and backgrounds for 24 hours to remember… 
+
+					<br><br>Enter as an individual or as a group (maximum of 4 people per team) with friends. Take a single red paperclip and see what you can make of it. Document your trades on Twitter and then present them to our judges Saturday night. The winning three teams will take home a $300 cash prize and we will celebrate with free food and a live WRUR DJ. 
+
+					<br><br>Pre-register by joining our <a href="https://www.google.com/url?q=https%3A%2F%2Fwww.facebook.com%2Fevents%2F787380074689665&sa=D&sntz=1&usg=AFQjCNEyo8Mnz9Rq6l1vGdq4kBq-PMsKSA" target="_blank">Facebook event</a> or emailing us at sparkentrepreneurship@gmail.com!
+				</div>
+			</div>
+		</div>
+		<div class="background-container container dark-bg">
+			<div class="content">
+				<div class="header header-light">Background</div>
+				<div class="text light">
+					<div class="quote">
+						<em>“If at first the idea is not absurd, then there is no hope for it.”</em> - Albert Einstein
+					</div>
+
+					In 2006, 26-year-old Kyle MacDonald made a series of 14 online trades, starting with just one red paperclip and trading all the way up to a house. 
+					<br><br>
+
+					<ol>
+						<li>On July, 2005, MacDonald traded the red paperclip for a fish-shaped pen.</li>
+						<li>He then traded the pen the same day for a hand-sculpted doorknob from Seattle, Washington, which he nicknamed “Knob-T.”</li>
+						<li>On July 25, 2005, he traveled to Amherst, Massachussetts, with a friend to trade Knob-T for a Coleman camp stove (with fuel).</li>
+						<li>On September 24, 2005, he went to California and traded the camp stove for a Honda generator.</li>
+						<li>On November 16, 2005, he traded the generator for an “instant party”: an empty keg, an IOU for filling the keg with beer of the holder’s choice, and a neon Budweiser sign.</li>
+						<li>On December 8, 2005, he traded the “instant party” to Quebec comedian and radio personality Michel Barrette for one Ski-doo snowmobile.</li>
+						<li>Within a week, he traded the snowmobile for a two-person trip to Yahk, British Columbia.</li>
+						<li>On January 7, 2006, he traded the second spot in the Yahk trip for a cube van.</li>
+						<li>On February 22, 2006, he traded the cube van for a recording contract with Metalworks in Mississauga, Ontario.</li>
+						<li>On April 11, 2006, he traded the recording contract to Jody Gnant for a year’s rent in Phoenix, Arizona.</li>
+						<li>On April 26, 2006, he traded the one year’s rent for an afternoon with Alice Cooper.</li>
+						<li>On May 26, 2006, he traded the afternoon with Alice Cooper for a KISS motorized snow globe.</li>
+						<li>On June 2, 2006, he traded the KISS motorized snow globe to Corbin Bernsen for a role in the film Donna on Demand.</li>
+						<li>On July 5, 2006, he traded the movie role for a two-story farmhouse in Kipling, Saskatchewan.</li>
+					</ol>
+
+					<br><br>Now MacDonald’s website, www.redpaperclip.com, has transformed into an internet company that “does things in real life.” 
+				</div>
+			</div>
+		</div>
+		<div class="schedule-container container light-bg">
+			<a class="locallink" name="itinerary"></a>
+			<div class="content">
+				<div class="header header-dark">Event Itinerary</div>
+				<div class="itinerary">
+					<h2>Friday, March 20, 2015 - Rettner Hall Atrium</h2>
+					<h4>06:00 pm - 06:15 pm     Registration / Sign-in</h4>
+					<h4>06:15 pm - 08:00 pm     Challenge kickoff</h4>
+					<h4>11:00 pm - 11:30 pm     Coffee break / Check-in (optional)</h4>
+
+					<br>
+					<h2>Saturday, March 21, 2015 - Rettner Hall Atrium</h2>
+
+					<h4>03:00 am - 03:30 am     Snacks break / Check-in (optional)</h4>
+					<h4>11:00 am - 11:30 am     Coffee break / Check-in (optional)</h4>
+					<h4>02:00 pm - 02:30 pm     Coffee break / Check-in (optional)</h4>
+					<h4>06:00 pm - 07:30 pm     Challenge judging / Results</h4>
+					<h4>07:30 pm - 09:00 pm     Reception w/ free food and live DJ</h4>
+				</div>
+				<div class="text dark">
+					<br><br>The Spark Entrepreneurs e-board will be stationed in Rettner throughout the entire duration of the challenge (6:00 pm Friday to 6:00 pm Saturday), offering support, help brainstorming, and free coffee and snacks at the designated break times.
+				</div>
+			</div>
+		</div>
+		<div class="judges-container container grey-bg">
+			<a class="locallink" name="judges"></a>
+			<div class="content">
+				<div class="header header-dark">Judges</div>
+				<div class="judges dark">
+					<div class="pic">
+						<%= image_tag "red-judges/Burns.jpg", height: "200px", :class=>"judge"%>
+						<div class="judge-name">Matthew Burns</div>
+						<div class="judge-desc">College Dean of Students</div>
+					</div>
+					<div class="pic">
+						<%= image_tag "red-judges/Ferguson.jpg", height: "200px", :class=>"judge"%>
+						<div class="judge-name">George Ferguson</div>
+						<div class="judge-desc">Rettner Hall for Innovation</div>
+					</div>
+					<div class="pic">
+						<%= image_tag "red-judges/Virgilio.jpg", height: "200px", :class=>"judge"%>
+						<div class="judge-name">Susanna Virgilio</div>
+						<div class="judge-desc">Center for Entrepreneurship</div>
+					</div>
+					<div class="pic">
+						<%= image_tag "red-judges/Tobin.jpg", height: "200px", :class=>"judge"%>
+						<div class="judge-name">Bob Tobin</div>
+						<div class="judge-desc">Simon Business School</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="contact-container container dark-bg">
+			<a class="locallink" name="contact"></a>
+			<div class="content">
+				<div class="header header-light">Contact Us</div>
+				<div class="text light">
+					We can be reached at SparkEntrepreneurship@gmail.com.
+					<br><br>Also check us out on Facebook:
+				</div>
+				<div class="facebook light">
+					<div class="fb-link"><a href="https://www.facebook.com/SparkEntrepreneurship" target="_blank">Like our page!</a></div>
+					<div class="fb-link"><a class="fb-link" href="https://www.facebook.com/groups/URTRIBE/" target="_blank">Join our group!</a></div>
+					<div class="col-left">
+						
+					</div>
+					<div class="col-right">
+						
+					</div>
+				</div>
+			</div>
+			<div class="footer light"><%=link_to 'Spark Entrepreneurs', root_path=%> | <a href="http://rochester.edu" target="_blank">University of Rochester</a> | 2015</div>
+		</div>
+	</div>
+</div>
