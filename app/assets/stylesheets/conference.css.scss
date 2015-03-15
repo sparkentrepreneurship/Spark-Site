@@ -314,6 +314,14 @@ $dark-blue-t: rgba(18, 42, 54, 0.99);
 		text-align: center;
 	}
 
+	.subheader {
+		font-size: 2em;
+		font-weight: 700;
+		margin: 0 auto 0 auto;
+		padding: 20px 0 50px 0;
+		text-align: center;
+	}
+
 	.header-dark {
 		color: #333;
 	}
@@ -341,6 +349,17 @@ $dark-blue-t: rgba(18, 42, 54, 0.99);
 		color: #333;
 	}
 
+	span.red {
+		color: red;
+	}
+
+	.hotel {
+		color: $blue;
+		&:hover {
+			color: $dark-blue;
+		}
+	}
+
 	.dark {
 		color: #333;
 		a {
@@ -350,6 +369,14 @@ $dark-blue-t: rgba(18, 42, 54, 0.99);
 
 	.light {
 		color: #ccc;
+	}
+
+	.about-container {
+		.content {
+			.text {
+				text-align: left;
+			}
+		}
 	}
 
 	// Speakers
