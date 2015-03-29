@@ -108,17 +108,47 @@
 			</div>
 		</div>
 	</div>
-	<div class="contact-container container dark-bg">
+	<div class="events-container container dark-bg">
 		<a class="locallink" name="contact"></a>
 		<div class="content">
-			<div class="header header-light">Contact Us</div>
-			<div class="text light">
+			<div class="header header-light">Events</div>
+			<div class="events-list-container">
+				<ul class="events-list">
+					<li class="event-card">
+						<div class="event">
+							<div class="event-pic" id="event-conference-pic"></div>
+							<div class="event-text">Entrepreneurship Conference</div>
+							<%=link_to 'Goto site >', conference_path, :target => '_blank', :class => 'event-link' =%>
+						</div>
+					</li>
+					<li class="event-card">
+						<div class="event">
+							<div class="event-pic" id="event-red-pic"></div>
+							<div class="event-text">Red Paperclip Challenge</div>
+							<%=link_to 'Goto site >', red_path, :target => '_blank', :class => 'event-link' =%>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="contact-container container light-bg">
+		<a class="locallink" name="contact"></a>
+		<div class="content">
+			<div class="header header-dark">Contact Us</div>
+			<div class="text dark">
 				We can be reached at SparkEntrepreneurship@gmail.com.
 				<br><br>Also check us out on Facebook:
 			</div>
-			<div class="facebook light">
-				<div class="fb-link"><a href="https://www.facebook.com/SparkEntrepreneurship" target="_blank">Like our page!</a></div>
-				<div class="fb-link"><a class="fb-link" href="https://www.facebook.com/groups/URTRIBE/" target="_blank">Join our group!</a></div>
+			<div class="facebook dark">
+				<div class="fb-link">
+					<div class="fb-link-icon"><a href="https://www.facebook.com/SparkEntrepreneurship" target="_blank"><i class="fa fa-flag"></i></a></div>
+					<div class="fb-link-text">Like our page!</div>
+				</div>
+				<div class="fb-link">
+					<div class="fb-link-icon"><a href="https://www.facebook.com/groups/URTRIBE/" target="_blank"><i class="fa fa-users"></i></a></div>
+					<div class="fb-link-text">Join our group!</div>
+				</div>
 				<div class="col-left">
 					
 				</div>
@@ -127,6 +157,6 @@
 				</div>
 			</div>
 		</div>
-		<div class="footer light">Spark Entrepreneurs | <a href="http://rochester.edu" target="_blank">University of Rochester</a> | 2015</div>
+		<div class="footer dark">Spark Entrepreneurs | <a href="http://rochester.edu" target="_blank">University of Rochester</a> | 2015</div>
 	</div>
 </div>

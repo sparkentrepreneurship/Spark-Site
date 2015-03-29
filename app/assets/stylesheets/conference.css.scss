@@ -722,24 +722,32 @@ $dark-blue-t: rgba(18, 42, 54, 0.99);
 	// Contact Us
 
 	.facebook {
+		margin: 20px 0 0 0;
 		font-size: 1em;
 		text-align: center;
 		.fb-link {
-			margin: 20px 0 0 0;
-			a {
-				color: $flatui-yellow;
+			display: inline-block;
+			margin: 0 20px 0 20px;
+			.fb-link-icon {
+				display: inline-block;
+				border: 1px solid #ccc;
+				a {
+					color: #ccc;
+					i {
+						padding: .2em;
+						font-size: 1.5em;
+					}
+					&:hover {
+						color: #fff;
+					}
+				}
 				&:hover {
-					color: #fff;
+					border: 1px solid #fff;
 				}
 			}
-		}
-		.col-left {
-			float: left;
-			width: 50%;
-		}
-		.col-right {
-			float: right;
-			width: 50%;
+			.fb-link-text {
+				font-size: .8em;
+			}
 		}
 	}
 

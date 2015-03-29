@@ -508,19 +508,57 @@ a {
 	text-align: justify;
 }
 
-.event {
-	display: inline-block;
-	width: 300px;
-	height: 300px;
-	background-color: #ededed;
-	// margin-bottom: 30px;
+.events-list-container {
+	.events-list {
+		.event-card {
+			display: inline-block; // need to add this to media-query #mobile
+			// float: left; 
+			min-width: 250px;
+			width: 28%;
+			height: 300px;
+			background: #eee;
+			text-align: center;
+			margin: 2%; // make margin auto-sides for media-query #mobile
+			.event {
+				position: relative;
+				margin: 5%; // establishes the amount of space on sides of cards
+				width: 90%;
+				height: 90%;
+				.event-pic {
+					margin: 0 0 4% 0;
+					width: 100%;
+					height: 50%;
+					background-size: cover;
+					background-position: center;
+					background-color: #aaa;
+					overflow: hidden;
+				}
+				.event-text {
+					margin: 0 10% 0 10%;
+					font-weight: 700;
+				}
+				.event-link {
+					display: inline-block;
+					position: absolute;
+					right: 0;
+					bottom: 0;
+					font-weight: 400;
+					color: #999;
+					&:hover {
+						color: $flatui-yellow;
+					}
+				}
+			}
+		}
+	}
 }
 
-// special after css for the equidistant blocks trick... 
-.event-container:after {
-	content: '';
-	width: 100%;
-	display: inline-block;
+#event-conference-pic {
+	background-image: image-url("rochester2.jpg");
+}
+
+#event-red-pic {
+	background-image: image-url("red-paperclip.jpg");
 }
 
 // who we are
@@ -554,15 +592,31 @@ a {
 // Contact Us
 
 .facebook {
+	margin: 20px 0 0 0;
 	font-size: 1em;
 	text-align: center;
 	.fb-link {
-		margin: 20px 0 0 0;
-		a {
-			color: $flatui-yellow;
-			&:hover {
-				color: #fff;
+		display: inline-block;
+		margin: 0 20px 0 20px;
+		.fb-link-icon {
+			display: inline-block;
+			border: 1px solid $dark-text;
+			a {
+				color: #222;
+				i {
+					padding: .2em;
+					font-size: 1.5em;
+				}
+				&:hover {
+					color: #fff;
+				}
 			}
+			&:hover {
+				border: 1px solid #fff;
+			}
+		}
+		.fb-link-text {
+			font-size: .8em;
 		}
 	}
 	.col-left {
@@ -579,5 +633,11 @@ a {
 	font-size: .7em;
 	text-align: center;
 	padding: 0 0 20px 0;
+	a {
+		color: #555;
+		&:hover {
+			color: #fff;
+		}
+	}
 }
 
