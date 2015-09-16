@@ -1,0 +1,333 @@
+/* variables */
+
+$side-margin: 100px; // 50px for margin
+// $side-margin-rightnav: 35px; // adjusted right margin for navbar
+$side-margin-rightnav: 85px;
+$content-width: 960px;
+
+$flatui-silver: #bdc3c7;
+$dark-grey: #222;
+$flatui-yellow: #f1c40f;
+$off-white: #fafafa;
+$red-transparent: rgba(192, 57, 43, .9);
+$red: #e74c3c;
+$red: #010A29;
+
+/* * * * * * * * * * * * * * * * * * * * * * * 	*/
+/*												                      */
+/*			Eric Meyers                        			*/
+/*											                       	*/
+/* * * * * * * * * * * * * * * * * * * * * * *	*/
+
+
+.eric-meyers{
+
+	/* preliminary general stuff */
+
+	a {
+		color: #ccc;
+		text-decoration: none;
+		&:hover {
+			color: #eee;
+			// text-shadow: 0px 0px 50px #eee;
+		}
+	}
+
+	.img-placeholder {
+		width: 100%;
+	}
+
+	.light-bg {
+		background-color: $off-white;
+		background-image: url(/assets/eric-meyers/eric-meyers-promo.png);
+		background-repeat: true;
+		a {
+			color: $red;
+			text-decoration: none;
+			&:hover {
+				color: #DB9090;
+				// text-shadow: 0px 0px 50px #eee;
+			}
+		}
+	}
+
+	.dark-bg {
+		background-color: $red-transparent;
+	}
+
+	.grey-bg {
+		background-color: #eee;
+	}
+
+	.container {
+		position: relative;
+		.locallink {
+			position: absolute;
+			top: -70px;
+		}
+	}
+
+	@media screen and (max-device-width: 800px) {
+		body {
+			background: $red repeat center center fixed;
+		}
+		#bgvid {
+			display: none;
+		}
+	}
+
+
+	/* navigation */
+
+	.nav-logo {
+		transform: translateY(25%);
+		margin: 0 10px 0 0;
+	}
+	// page/splash navigation
+	.nav-container {
+		z-index: 100;
+		position: absolute;
+		width: 100%;
+		.nav-contents {
+			position: relative;
+			height: 70px;
+			width: 100%;
+			.nav {
+				position: relative;
+				// top: -100px;
+				// height: 70px;
+				width: $content-width;
+				margin: 0 auto 0 auto;
+				padding: 0 $side-margin-rightnav 0 $side-margin;
+				background: rgb(219, 36, 36); /* Fall-back for browsers that don't support rgba */
+		    	background: rgba(219, 36, 36, .9);
+				// background-color: #999;
+				box-shadow: 0px 0px 20px #000;
+				a {
+					color: #ccc;
+					&:hover {
+						color: #fff;
+						// text-shadow: 0px 0px 8px #fff;
+					}
+				}
+				.nav-left {
+					display: inline;
+					float: left;
+					// margin-left: $side-margin;
+					.nav-left-item-container {
+						display: inline-block;
+						.nav-left-item {
+							display: table-cell;
+							text-align: center;
+							vertical-align: middle;
+							height: 70px;
+							// padding: 0 20px 0 20px;
+						}
+					}
+	/*
+					// make it center vertically
+					position: relative;
+					top: 50%;
+					transform: translateY(-50%);
+	*/
+				}
+				.nav-right {
+					display: inline;
+					float: right;
+					// margin-right: $side-margin-rightnav;
+
+					.nav-right-item-container {
+						display: inline-block;
+						// overflow: auto;
+						// margin-left: 10px;
+						.nav-right-item {
+							display: table-cell;
+							text-align: center;
+							vertical-align: middle;
+							height: 70px;
+							padding: 0 15px 0 15px;
+							// min-width: 80px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// slide down navigation
+	.fixed-nav-container {
+		z-index: 99;
+		position: fixed;
+		width: 100%;
+		.fixed-nav-contents {
+			position: relative;
+			top: -100px;
+			height: 70px;
+			width: 100%;
+			background: rgb(219, 36, 36); /* Fall-back for browsers that don't support rgba */
+		    background: rgba(219, 36, 36, 1);
+		    background: $red;
+			// background-color: #999;
+			// box-shadow: 0px 0px 20px #000;
+			.fixed-nav {
+				position: relative;
+				// top: -100px;
+				// height: 70px;
+				width: $content-width;
+				margin: 0 auto 0 auto;
+				padding: 0 $side-margin-rightnav 0 $side-margin;
+
+				.nav-left {
+					display: inline;
+					float: left;
+					// margin-left: $side-margin;
+					.nav-left-item-container {
+						display: inline-block;
+						.nav-left-item {
+							display: table-cell;
+							text-align: center;
+							vertical-align: middle;
+							height: 70px;
+							// padding: 0 20px 0 20px;
+						}
+					}
+	/*
+					// make it center vertically
+					position: relative;
+					top: 50%;
+					transform: translateY(-50%);
+	*/
+				}
+				.nav-right {
+					display: inline;
+					float: right;
+					// margin-right: $side-margin-rightnav;
+
+					.nav-right-item-container {
+						display: inline-block;
+						// overflow: auto;
+						// margin-left: 10px;
+						.nav-right-item {
+							display: table-cell;
+							text-align: center;
+							vertical-align: middle;
+							height: 70px;
+							padding: 0 15px 0 15px;
+							// min-width: 80px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+	/* body and content */
+
+  html {
+    background-color: $red;
+  }
+
+	body {
+		background-color: $red;
+		min-width: $content-width;
+		color: $dark-grey;
+	}
+
+	.splash-container {
+		width: 100vw;
+		height: 100vh;
+
+		.splash-img-placeholder {
+			height: 100vh;
+			width: 100%;
+			//min-width: 1100px;
+      background-color: $red;
+      background-image: url();
+
+      .splash-image {
+        display: block;
+        margin: 0 auto 0 auto;
+  			max-width: 70%;
+        background-color: $red;
+        background-image: url(/assets/eric-meyers/eric-meyers-promo.png);
+        background-size: 90%;
+        background-repeat: no-repeat;
+
+        img {
+          margin: 0 auto 0 auto;
+          max-height: 80vh;
+          max-width: 100%;
+        }
+
+        .text-date {
+          display: inline-block;
+          width: 48%;
+          background-color: $red;
+          color: #fff;
+        }
+
+        .text-form {
+          display: inline-block;
+          width: 48%;
+          background-color: $red;
+
+          #mc_embed_signup {
+            min-width: 100%;
+
+            #mc_embed_signup_scroll {
+              min-width: 100%;
+            }
+
+            #mc-header {
+              color: #fff;
+            }
+
+            .mc-eric-field-group {
+              display: inline-block;
+              margin: 20px 0px 20px 0px;
+              width: 100%;
+            }
+
+            #mce-EMAIL {
+              margin: 0;
+              min-width: 65%;
+            }
+
+            #mc-eric-embedded-subscribe {
+              display: inline-block;
+              background-color: #222;
+              border: 0 none;
+              color: #FFFFFF;
+              cursor: pointer;
+              font-size: 15px;
+              font-weight: bold;
+              width: 214px;
+              height: 30px;
+              line-height: 24px;
+              margin: 0;
+              padding: 2px 7px 2px 7px;
+              text-align: center;
+              text-decoration: none;
+              white-space: nowrap;
+              max-width: 19%;
+            }
+          }
+        }
+      }
+
+			.splash-text {
+				margin: 0 auto 0 auto;
+				width: 1100px;
+				// height: 155px;
+				text-align: center;
+			}
+		}
+	}
+
+	.footer {
+		font-size: .7em;
+		text-align: center;
+		padding: 0 0 20px 0;
+	}
+}
