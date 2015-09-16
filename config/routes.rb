@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   root 'one_page#home'
   match '/red',         to: 'one_page#red',           via: 'get'
   match '/conference',  to: 'one_page#conference',    via: 'get'
-  match '/eric-meyers', to: 'one_page#eric',          via: 'get'
+  match '/eric', to: 'one_page#eric',          via: 'get'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
